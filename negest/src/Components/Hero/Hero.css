@@ -1,0 +1,53 @@
+:root {
+    --primary-color: #fbcbd3;
+    --primary-text-color: #ffffff;
+    --secondary-text-color: hsla(0, 0%, 100%, 0.789);
+}
+
+.hero-section {
+    width: 100vw;
+    height: 450px;
+    color: var(--primary-color);
+    display: flex;
+    gap: 20px;
+    border-bottom: 0.5px solid var(--primary-color);
+    background-image: linear-gradient(#fbcbd394 10%, transparent);
+}
+
+.hero-left {
+    align-content: center;
+    padding-left: 100px;
+    z-index: 400;
+}
+
+.hero-left h1 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.hero-left h2 {
+    font-size: 25px;
+    opacity: 0.9;
+    padding-left: 20px;
+}
+
+.hero-left button {
+    margin-top: 35px;
+    margin-left: 100px;
+    padding: 12px 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 17px;
+    background-color: transparent;
+    color: inherit;
+    font-weight: 700;
+
+}
+
+.hero-right img {
+    height: 450px;
+    width: auto;
+    margin-top: 20px;
+    right: 40px;
+    position: absolute;
+    z-index: 300;
+}

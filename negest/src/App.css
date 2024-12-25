@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #252a2e;
+  overflow-x: hidden;
+}
+
+.main-container {
+  display: flex;
+  color: white;
+  margin-top: 70px;
+}
+
+.content.open {
+  margin-left: 250px;
+  transition: margin-left 0.3s ease;
+  width: calc(100% - 250px);
+}
+
+.content.closed {
+  margin-left: 70px;
+  transition: margin-right 0.3s ease;
+  width: calc(100% - 70px);
+}
+
+.content {
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer.open {
+  margin-left: 250px;
+}
+
+.footer.closed {
+  margin-left: 70px;
+}

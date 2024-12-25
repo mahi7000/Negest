@@ -1,0 +1,77 @@
+:root {
+    --primary-color: #fbcbd3;
+    --primary-text-color: #ffffff;
+    --secondary-text-color: hsla(0, 0%, 100%, 0.789);
+}
+
+.news-letter {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: center;
+    padding: 0 140px;
+    color: var(--primary-color);
+    gap: 20%;
+    margin-top: 100px;
+}
+
+.news-letter h1 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.news-letter p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.news-letter div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-letter input {
+    width: 70%;
+    max-width: 600px;
+    height: 30px;
+    border: solid 1px var(--primary-color);
+    border-radius: 7px;
+    padding: 0 20px;
+    background-color: #fff0f24d;
+    color: var(--primary-text-color);
+}
+
+.news-letter input::placeholder {
+    padding: 10px 5px;
+    color: var(--primary-color);
+    letter-spacing: 1.5px;
+}
+
+.news-letter input:focus + button i {
+    color: var(--primary-text-color);
+}
+
+.news-letter input:focus::placeholder {
+    color: var(--primary-text-color);
+}
+
+.news-letter input:focus {
+    outline: none;
+    border-color: var(--primary-text-color);
+}
+
+.news-letter button {
+    margin-left: -76px;
+    background-color: transparent;
+    border: none;
+    background-color: #fbcbd36e;
+    cursor: pointer;
+    color: var(--primary-text-color);
+    border-radius: 0 8px 8px 0;
+    height: 30px;
+    font-weight: 600;
+}

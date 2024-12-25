@@ -1,0 +1,100 @@
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    border-bottom: 0.5px solid;
+    font-family: "Montserrat", sans-serif;
+    color: var(--primary-color);
+    background-color: #252a2e;
+    overflow-x: hidden;
+    position: fixed;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 1000;
+}
+
+.header-logo {
+    flex: 30%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-logo i {
+    font-size: 25px;
+}
+
+.header-logo p {
+    font-family: 'League Spartan';
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.search-bar {
+    align-self: center;
+    width: 60%;
+}
+
+.search-bar input {
+    width: 90%;
+    max-width: 600px;
+    height: 30px;
+    border: solid 1px var(--primary-color);
+    border-radius: 15px;
+    padding: 0 20px;
+    background-color: #fff0f24d;
+    color: var(--primary-text-color);
+}
+
+.search-bar input::placeholder {
+    padding: 10px 5px;
+    color: var(--primary-color);
+    letter-spacing: 1.5px;
+}
+
+.search-bar input:focus + button i {
+    color: var(--primary-text-color);
+}
+
+.search-bar input:focus::placeholder {
+    color: var(--primary-text-color);
+}
+
+.search-bar input:focus {
+    outline: none;
+    border-color: var(--primary-text-color);
+}
+
+.search-bar button {
+    margin-left: -35px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.cart-profile {
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+    gap: 30px;
+    font-size: 20px;
+}
+
+.cart-profile button {
+    margin-left: 100px;
+    padding: 12px 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 17px;
+    background-color: transparent;
+    color: inherit;
+    font-weight: 700;
+    width: 90px;
+}
+
+.cart-profile i:hover {
+    color: var(--primary-text-color);
+}
