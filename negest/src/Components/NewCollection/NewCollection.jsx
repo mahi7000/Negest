@@ -9,7 +9,7 @@ export const NewCollection = () => {
       <h1>New In</h1>
       <div className='scroll-container'>
         <div className='new-collection-item snaps-inline'>
-          {all_products.slice(5, 10).map((item, i) => (
+          {all_products.slice(5, 19).map((item, i) => (
             <Item key={i} id={item.id} name={item.name} image={item.image} price={item.price} className='item' />
           ))}
         </div>

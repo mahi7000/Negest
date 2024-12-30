@@ -1,0 +1,9 @@
+.related-products h1{
+    font-size: 30px;
+}
+
+.related-products .related-products-item {
+    display: flex;
+    gap: 40px;
+    margin: 30px 50px;
+}

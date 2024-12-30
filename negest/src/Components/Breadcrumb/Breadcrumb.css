@@ -1,0 +1,12 @@
+:root {
+    --primary-color: #fbcbd3;
+    --primary-text-color: #ffffff;
+    --secondary-text-color: hsla(0, 0%, 100%, 0.789);
+}
+
+.breadcrumb {
+    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+}

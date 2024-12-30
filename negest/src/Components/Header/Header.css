@@ -39,7 +39,7 @@
 }
 
 .search-bar input {
-    width: 90%;
+    width: 100%;
     max-width: 600px;
     height: 30px;
     border: solid 1px var(--primary-color);
@@ -93,7 +93,14 @@
     color: inherit;
     font-weight: 700;
     width: 90px;
+    cursor: pointer;
 }
+
+.cart-profile button:hover {
+    color: var(--primary-text-color);
+    border: 1px solid var(--primary-text-color);
+}
+
 
 .cart-profile i:hover {
     color: var(--primary-text-color);

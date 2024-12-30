@@ -2,5 +2,19 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    padding: 30px;
+    padding: 30px 50px;
+}
+
+.category-index {
+    padding: 20px;
+    font-weight: 600;
+}
+
+.category-index .category-sort {
+    width: 100px;
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 25px;
+    color: var(--primary-color);
+    padding: 10px 0;
 }

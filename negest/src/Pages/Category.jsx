@@ -2,16 +2,15 @@ import React, { useContext } from 'react';
 import './styles/Category.css'
 import { ShopContext } from '../Context/ShopContext';
 import { Item } from '../Components/Item/Item';
+import { Banner } from '../Components/Banner/Banner';
 
 export const Category = (props) => {
   const {all_products} = useContext(ShopContext);
 
   return (
     <div className='category'>
+      <Banner category={props.category}/>
       <div className="category-index">
-        <p>
-          <span>Showing 1-6</span> out of 35
-        </p>
         <div className="category-sort">
           Sort by <i className="fa-solid fa-caret-down"></i>
         </div>

@@ -26,6 +26,8 @@ export let all_products = [
         image: accessories_1,
         price: 280,
         rating: 4,
+        description: "Elevate your everyday style with our stunning black leather bag, designed for the modern woman who values both elegance and practicality. Crafted from premium, durable leather, this bag features a sleek silhouette that exudes sophistication.",
+        tags: ["chic", "black", "leather"],
     },
     {
         id: 2,
@@ -34,6 +36,8 @@ export let all_products = [
         image: accessories_2,
         price: 900,
         rating: 4.5,
+        description: "Elevate your everyday style with our stunning black leather bag, designed for the modern woman who values both elegance and practicality. Crafted from premium, durable leather, this bag features a sleek silhouette that exudes sophistication.",
+        tags: ["chic", "black", "leather"],
     },
     {
         id: 3,
@@ -42,6 +46,8 @@ export let all_products = [
         image: bag_1,
         price: 1200,
         rating: 4.3,
+        description: "Elevate your everyday style with our stunning black leather bag, designed for the modern woman who values both elegance and practicality. Crafted from premium, durable leather, this bag features a sleek silhouette that exudes sophistication.",
+        tags: ["chic", "black", "leather"],
     },
     {
         id: 4,
@@ -50,6 +56,8 @@ export let all_products = [
         image: bag_2,
         price: 2800,
         rating: 4.8,
+        description: "Elevate your everyday style with our stunning black leather bag, designed for the modern woman who values both elegance and practicality. Crafted from premium, durable leather, this bag features a sleek silhouette that exudes sophistication.",
+        tags: ["chic", "black", "leather"],
     },
     {
         id: 5,
@@ -58,6 +66,8 @@ export let all_products = [
         image: bag_3,
         price: 2350,
         rating: 4.4,
+        description: "Elevate your everyday style with our stunning black leather bag, designed for the modern woman who values both elegance and practicality. Crafted from premium, durable leather, this bag features a sleek silhouette that exudes sophistication.",
+        tags: ["chic", "black", "leather"],
     },
     {
         id: 6,
@@ -66,6 +76,8 @@ export let all_products = [
         image: bottom_1,
         price: 1400,
         rating: 4.9,
+        description: "Elevate your everyday style with our stunning black leather bag, designed for the modern woman who values both elegance and practicality. Crafted from premium, durable leather, this bag features a sleek silhouette that exudes sophistication.",
+        tags: ["chic", "black", "leather"],
     },
     {
         id: 7,
@@ -74,6 +86,8 @@ export let all_products = [
         image: bottom_2,
         price: 1800,
         rating: 3.9,
+        description: "Elevate your everyday style with our stunning black leather bag, designed for the modern woman who values both elegance and practicality. Crafted from premium, durable leather, this bag features a sleek silhouette that exudes sophistication.",
+        tags: ["chic", "black", "leather"],
     },
     {
         id: 8,
@@ -82,6 +96,8 @@ export let all_products = [
         image: dress_1,
         price: 2400,
         rating: 4.7,
+        description: "Elevate your everyday style with our stunning black leather bag, designed for the modern woman who values both elegance and practicality. Crafted from premium, durable leather, this bag features a sleek silhouette that exudes sophistication.",
+        tags: ["chic", "black", "leather"],
     },
     {
         id: 9,
@@ -90,6 +106,8 @@ export let all_products = [
         image: dress_2,
         price: 3000,
         rating: 3.3,
+        description: "Elevate your everyday style with our stunning black leather bag, designed for the modern woman who values both elegance and practicality. Crafted from premium, durable leather, this bag features a sleek silhouette that exudes sophistication.",
+        tags: ["chic", "black", "leather"],
     },
     {
         id: 10,
@@ -98,6 +116,8 @@ export let all_products = [
         image: dress_3,
         price: 2970,
         rating: 5,
+        description: "Elevate your everyday style with our stunning black leather bag, designed for the modern woman who values both elegance and practicality. Crafted from premium, durable leather, this bag features a sleek silhouette that exudes sophistication.",
+        tags: ["chic", "black", "leather"],
     },
     {
         id: 11,
@@ -106,6 +126,8 @@ export let all_products = [
         image: outerwear_1,
         price: 2000,
         rating: 4.3,
+        description: "Elevate your everyday style with our stunning black leather bag, designed for the modern woman who values both elegance and practicality. Crafted from premium, durable leather, this bag features a sleek silhouette that exudes sophistication.",
+        tags: ["chic", "black", "leather"],
     },
     {
         id: 12,
@@ -114,6 +136,8 @@ export let all_products = [
         image: set_1,
         price: 3100,
         rating: 4.4,
+        description: "Elevate your everyday style with our stunning black leather bag, designed for the modern woman who values both elegance and practicality. Crafted from premium, durable leather, this bag features a sleek silhouette that exudes sophistication.",
+        tags: ["chic", "black", "leather"],
     },
     {
         id: 13,
@@ -122,6 +146,8 @@ export let all_products = [
         image: set_2,
         price: 3400,
         rating: 4.9,
+        description: "Elevate your everyday style with our stunning black leather bag, designed for the modern woman who values both elegance and practicality. Crafted from premium, durable leather, this bag features a sleek silhouette that exudes sophistication.",
+        tags: ["chic", "black", "leather"],
     },
     {
         id: 14,
@@ -130,6 +156,8 @@ export let all_products = [
         image: shoe_1,
         price: 3200,
         rating: 3.6,
+        description: "Elevate your everyday style with our stunning black leather bag, designed for the modern woman who values both elegance and practicality. Crafted from premium, durable leather, this bag features a sleek silhouette that exudes sophistication.",
+        tags: ["chic", "black", "leather"],
     },
     {
         id: 15,
@@ -138,6 +166,8 @@ export let all_products = [
         image: shoe_2,
         price: 2500,
         rating: 3.9,
+        description: "Elevate your everyday style with our stunning black leather bag, designed for the modern woman who values both elegance and practicality. Crafted from premium, durable leather, this bag features a sleek silhouette that exudes sophistication.",
+        tags: ["chic", "black", "leather"],
     },
     {
         id: 16,
@@ -146,6 +176,8 @@ export let all_products = [
         image: shoe_3,
         price: 2450,
         rating: 4.4,
+        description: "Elevate your everyday style with our stunning black leather bag, designed for the modern woman who values both elegance and practicality. Crafted from premium, durable leather, this bag features a sleek silhouette that exudes sophistication.",
+        tags: ["chic", "black", "leather"],
     },
     {
         id: 17,
@@ -154,6 +186,8 @@ export let all_products = [
         image: top_1,
         price: 1200,
         rating: 3.3,
+        description: "Elevate your everyday style with our stunning black leather bag, designed for the modern woman who values both elegance and practicality. Crafted from premium, durable leather, this bag features a sleek silhouette that exudes sophistication.",
+        tags: ["chic", "black", "leather"],
     },
     {
         id: 18,
@@ -162,6 +196,8 @@ export let all_products = [
         image: top_2,
         price: 1000,
         rating: 4.4,
+        description: "Elevate your everyday style with our stunning black leather bag, designed for the modern woman who values both elegance and practicality. Crafted from premium, durable leather, this bag features a sleek silhouette that exudes sophistication.",
+        tags: ["chic", "black", "leather"],
     },
     {
         id: 19,
@@ -170,5 +206,7 @@ export let all_products = [
         image: top_3,
         price: 2100,
         rating: 4.3,
+        description: "Elevate your everyday style with our stunning black leather bag, designed for the modern woman who values both elegance and practicality. Crafted from premium, durable leather, this bag features a sleek silhouette that exudes sophistication.",
+        tags: ["chic", "black", "leather"],
     },
 ];

@@ -36,9 +36,9 @@ function App() {
               <Route path='/product' element={<Product />}>
                 <Route path=':productId' element={<Product />} />
               </Route>
-              {SidebarData.slice(3,10).map((val, key) => {
+              {SidebarData.slice(3,11).map((val, key) => {
                 return (
-                  <Route key={key} path={val.link} element={<Category category={val.category}/>} />
+                  <Route key={key} path={val.link} element={<Category banner={val.category + 'banner'} category={val.category}/>} />
                 )
               })}
             </Routes>

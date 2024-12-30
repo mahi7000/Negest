@@ -17,7 +17,7 @@
     scroll-snap-align: start;
 }
 
-@media (min-width: 800px) {    
+@media (min-width: 1000px) {
     .popular-item {
         display: grid;
         grid-auto-flow: column;
@@ -27,21 +27,31 @@
     }
 }
 
-@media (max-width: 800px) and (min-width: 550px){    
+@media (max-width: 1000px) and (min-width: 800px) {    
     .popular-item {
         display: grid;
         grid-auto-flow: column;
-        grid-auto-columns: 40%;
+        grid-auto-columns: 34%;
         overflow-x: auto;
         scrollbar-width: none;
     }
 }
 
-@media (max-width: 550px) {    
+@media (max-width: 800px) and (min-width: 600px){    
     .popular-item {
         display: grid;
         grid-auto-flow: column;
-        grid-auto-columns: 65%;
+        grid-auto-columns: 57%;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+}
+
+@media (max-width: 600px) {    
+    .popular-item {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 85%;
         overflow-x: auto;
         scrollbar-width: none;
     }
