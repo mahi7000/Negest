@@ -30,9 +30,11 @@ body {
 }
 
 .footer.open {
+  width: calc(100% - 250px);
   margin-left: 250px;
 }
 
 .footer.closed {
+  width:  calc(100% - 70px);
   margin-left: 70px;
 }

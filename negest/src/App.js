@@ -12,6 +12,7 @@ import { Footer } from './Components/Footer/Footer';
 import { PopularPage } from './Pages/PopularPage';
 import { NewIn } from './Pages/NewIn';
 import { useState } from 'react';
+import { Search } from './Pages/Search';
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -29,6 +30,7 @@ function App() {
           <div className={`content ${isSidebarOpen ? 'open' : 'closed'}`}>
             <Routes>
               <Route path='/' element={<Shop />} />
+              <Route path='/search' element={<Search />} />
               <Route path='/cart' element={<Cart />} />
               <Route path='/login' element={<LoginSignup />} />
               <Route path='/popular' element={<PopularPage />} />
