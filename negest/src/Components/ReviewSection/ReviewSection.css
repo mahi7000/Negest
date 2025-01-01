@@ -1,0 +1,63 @@
+.review-section .review-section-title {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.product-display-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.product-display-rating p {
+    opacity: 0.8;
+    padding-inline: 5px;
+    margin: 15px;
+}
+
+.product-display-rating i.fa-star {
+    color: var(--primary-color);
+}
+
+.product-display-rating i.fa-star.empty {
+    opacity: 0.5;
+}
+
+.review-section form .name-review-submit {
+    height: 70px;
+    width: 55%;
+    display: flex;
+    
+}
+
+.review-section form .name-review-submit input {
+    flex-basis: 70%;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    border-radius: 15px;
+    padding-inline: 20px;
+    margin-top: 10px;
+    color: var(--primary-text-color);
+}
+
+.review-section form .name-review-submit button {
+    background-color: transparent;
+    border: none;
+}
+
+.review-section .reviews .review {
+    border: 1px solid var(--primary-color);
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 10px;
+    width: 40%;
+}
+
+.review-section .reviews .review .review-name-rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--primary-color);
+    font-size: 15px;
+}

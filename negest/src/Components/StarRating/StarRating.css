@@ -1,0 +1,23 @@
+.star-rating {
+    display: flex;
+    cursor: pointer;
+    margin-block-start: 20px;
+}
+
+.star {
+    color: var(--primary-color);
+    opacity: 0.3;
+    transition: color 0.2s;
+}
+
+.star i {
+    font-size: 15px;
+}
+
+.star.selected {
+    opacity: 1;
+}
+
+.star:hover {
+    opacity: 0.8;
+}
