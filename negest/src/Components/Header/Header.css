@@ -76,6 +76,11 @@
     color: var(--primary-color);
 }
 
+.search-bar button i {
+    font-size: 15px;
+    padding-right: 5px;
+}
+
 .cart-profile {
     display: flex;
     align-items: center;

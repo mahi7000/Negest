@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './styles/LoginSignup.css'; // Optional: Create a CSS file for styling
+import { Link } from 'react-router-dom';
 
 export const LoginSignup = () => {
     const [isLogin, setIsLogin] = useState(true);
@@ -66,7 +67,7 @@ export const LoginSignup = () => {
                 </div>
                 {error && <p className="error">{error}</p>}
                 <div className="button-container">
-                  <button className='log' type="submit">{isLogin ? 'Log In' : 'Sign Up'}</button>
+                  <Link to={'/'} style={{ color: 'inherit'}}><button className='log' type="submit">{isLogin ? 'Log In' : 'Sign Up'}</button></Link>
                 </div>
                 <p onClick={() => setIsLogin(!isLogin)} className="toggle-link">
                     {isLogin ? 'Need an account? Signup' : 'Already have an account? Login'}

@@ -38,3 +38,7 @@ body {
   width:  calc(100% - 70px);
   margin-left: 70px;
 }
+
+.hide-login {
+  display: none !important;
+}

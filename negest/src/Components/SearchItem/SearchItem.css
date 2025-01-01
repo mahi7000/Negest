@@ -1,0 +1,27 @@
+.search-item {
+    margin-inline: 100px;
+    margin-block: 50px;
+}
+
+.search-item .search-back {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+    color: var(--primary-text-color);
+}
+
+.search-item i:hover {
+    color: var(--secondary-text-color);
+}
+
+.search-item h1{
+    font-size: 30px;
+}
+
+.search-item .related-products-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 30px 50px;
+}
