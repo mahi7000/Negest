@@ -111,3 +111,11 @@
     border-radius: 15px;
     background-color: transparent;
 }
+
+p.no-items {
+    color: var(--primary-color);
+    font-size: 15px;
+    opacity: 0.5;
+    text-align: center;
+    padding: 30px;
+}

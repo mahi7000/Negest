@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 export const CartItems = () => {
     const {all_products, cartItem, removeFromCart, removeFromCartTotally, addToCart, getTotalCartAmount} = useContext(ShopContext);
+    let cartEmpty = true;
   return (
     <div className='cart-items'>
         <h1>Cart</h1>
@@ -19,6 +20,7 @@ export const CartItems = () => {
             </div>
             {all_products.map((e, i) => {
               if (cartItem[e.id] > 0) {
+                cartEmpty = false;
                 return (
                   <div key={i}>
                     <div className="cart-items-added cart-items-products-menu">
@@ -38,7 +40,11 @@ export const CartItems = () => {
                   </div>
                 );
               }
+              else {
+                return null;
+              }
             })}
+            {cartEmpty && <p className='no-items'>There are no items.</p>}
           </div>
           <div className="cart-items-products-right">
             <h2>Order Summary</h2>

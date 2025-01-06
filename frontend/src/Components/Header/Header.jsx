@@ -38,9 +38,13 @@ export const Header = ({ toggleSidebar }) => {
                 </form>
             </div>
             <div className="cart-profile">
-                <Link to='/login' style={{ color: 'inherit' }}>
+                {
+                    localStorage.getItem('auth-token')
+                    ? <button onClick={() => {localStorage.removeItem('auth-token'); window.location.replace('/')}}>Log Out</button>
+                    : <Link to='/login' style={{ color: 'inherit' }}>
                     <button>Log In</button>
-                </Link>
+                    </Link>
+                }
                 <Link to='/cart' style={{ color: 'inherit' }}>
                     <i className="fa-solid fa-cart-shopping"></i>
                 </Link>
