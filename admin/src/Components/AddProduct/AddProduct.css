@@ -1,0 +1,84 @@
+.add-product {
+    color: var(--primary-color);
+    margin-left: 250px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--primary-color);
+    border-radius: 15px;
+    margin: 120px 290px;
+}
+
+.add-product p {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.add-product input {
+    width: 500px;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: #be9fb02e;
+    margin-left: 10px;
+    color: var(--primary-text-color);
+}
+
+.add-product input::placeholder {
+    color: var(--secondary-text-color);
+}
+
+.add-product select {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: 35px;
+    text-align: center;
+    background-color: #be9fb02e;
+    border-radius: 15px;
+    padding: 0 10px;
+    color: var(--primary-text-color);
+    align-self: flex-start;
+}
+
+.add-product option {
+    background-color: #252a2eff;
+    color: var(--primary-color);
+}
+
+.add-product .product-image-border {
+    border: 1px solid var(--primary-color);
+    margin-left: 10px;
+    border-radius: 15px;
+    width: 100px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.add-product label {
+    overflow: hidden;
+}
+
+.add-product label i {
+    font-size: 70px;
+    padding: 10px;
+}
+
+.add-product label img {
+    width: 100px;
+}
+
+.add-product .addproduct-item-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-product .addproduct-btn {
+    padding: 10px 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    margin: 10px;
+    color: var(--primary-color);
+    background-color: transparent;
+    align-self: center;
+}
