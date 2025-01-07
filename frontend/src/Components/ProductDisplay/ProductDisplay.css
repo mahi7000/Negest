@@ -71,6 +71,18 @@
     opacity: 0.8;
 }
 
+.product-display-right button.cart-clicked {
+    opacity: 0.5;
+}
+
+.product-display-sizes div:hover {
+    opacity: 0.5;
+}
+
+.product-display-sizes div.chosen {
+    opacity: 0.5;
+}
+
 @media (max-width: 800px) {
     .product-display {
         display: flex;

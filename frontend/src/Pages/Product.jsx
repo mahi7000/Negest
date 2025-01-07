@@ -10,7 +10,7 @@ import { ReviewSection } from '../Components/ReviewSection/ReviewSection';
 export const Product = () => {
   const {all_products} = useContext(ShopContext);
   const {productId} = useParams();
-  const product = all_products.find((e)=> e.id === Number(productId));
+  const product = all_products.find((e) => e.id === Number(productId));
 
   return (
     <div className='product'>

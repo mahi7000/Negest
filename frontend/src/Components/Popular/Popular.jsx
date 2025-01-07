@@ -1,21 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Popular.css';
-import { all_products } from '../Assets/all_products';
 import { Item } from '../Item/Item';
 
 export const Popular = () => {
+  const [popular, setPopular] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:4000/popular')
+    .then((response) => response.json())
+    .then((data) => setPopular(data))
+  }, [])
+
   return (
     <div className='popular'>
       <h1>Popular</h1>
       <div className='scroll-container'>
         <div className='popular-item snaps-inline'>
-          {all_products.map((item, i) => {
-              if (item.rating > 4.5) {
-                return (<Item key={i} id={item.id} name={item.name} image={item.image} price={item.price} className='item'/>);
-              }
-              else {
-                return null;
-              }
+          {popular.map((item, i) => {
+              return (<Item key={i} id={item.id} name={item.name} image={item.image} price={item.price} className='item'/>);
             })}
         </div>
       </div>

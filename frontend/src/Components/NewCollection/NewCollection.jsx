@@ -1,15 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './NewCollection.css';
-import { all_products } from '../Assets/all_products';
 import { Item } from '../Item/Item';
 
 export const NewCollection = () => {
+  const [newin, setNewin] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:4000/newin')
+    .then((response) => response.json())
+    .then((data) => setNewin(data));
+  }, [])
+
   return (
     <div className='new-collection'>
       <h1>New In</h1>
       <div className='scroll-container'>
         <div className='new-collection-item snaps-inline'>
-          {all_products.slice(5, 19).map((item, i) => (
+          {newin.map((item, i) => (
             <Item key={i} id={item.id} name={item.name} image={item.image} price={item.price} className='item' />
           ))}
         </div>
