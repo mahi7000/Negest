@@ -13,7 +13,9 @@ app.use(express.json());
 app.use(cors());
 
 // Database Connection With MongoDb
-mongoose.connect("mongodb+srv://mahlet7000:Iwontforget7@cluster0.8ttqk.mongodb.net/NegestShopping");
+mongoose.connect("mongodb+srv://mahlet7000:Iwontforget7@cluster0.8ttqk.mongodb.net/NegestShopping?retryWrites=true&w=majority&appName=Cluster0")
+  .then(() => console.log("✅ MongoDB connected"))
+  .catch(err => console.error("❌ MongoDB connection error:", err));
 
 // API Creation
 
