@@ -33,9 +33,6 @@ function InnerApp({ isSidebarOpen, toggleSidebar }) {
 
   const isLoginPage = location.pathname === '/login';
 
-  console.log('Current path:', location.pathname); // Debugging
-  console.log('Is login page:', isLoginPage); // Debugging
-
   return (
     <div className='App'>
       <div className={isLoginPage ? 'hide-login' : ''} >

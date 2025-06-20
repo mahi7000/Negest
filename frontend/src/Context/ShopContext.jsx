@@ -1,6 +1,7 @@
 import React, { createContext, useEffect, useState } from 'react';
 
 export const ShopContext = createContext(null);
+const BASE_URL = process.env.REACT_APP_API_URL;
 
 const getDefautltCart = () => {
     let cart = {};
@@ -15,12 +16,12 @@ export const ShopContextProvider = (props) => {
     const [cartItem, setCartItem] = useState(getDefautltCart());
 
     useEffect(() => {
-        fetch('http://localhost:4000/allproducts')
+        fetch(`${BASE_URL}/allproducts`)
         .then((response) => response.json())
         .then((data) => set_all_products(data))
 
         if (localStorage.getItem('auth-token')) {
-            fetch('http://localhost:4000/getcart', {
+            fetch(`${BASE_URL}/getcart`, {
                 method: 'POST',
                 headers: {
                     Accept: 'application/json',
@@ -39,7 +40,7 @@ export const ShopContextProvider = (props) => {
         setCartItem((prev)=>({...prev,[itemId]:prev[itemId]+1}))
         if (localStorage.getItem('auth-token')) {
             console.log(localStorage.getItem('auth-token'));
-            fetch('http://localhost:4000/addtocart', {
+            fetch(`${BASE_URL}/addtocart`, {
                 method: 'post',
                 headers: {
                     Accept: 'application/json',
@@ -60,7 +61,7 @@ export const ShopContextProvider = (props) => {
         setCartItem((prev)=>({...prev,[itemId]:prev[itemId]-1}))
         if (localStorage.getItem('auth-token')) {
             console.log(localStorage.getItem('auth-token'));
-            fetch('http://localhost:4000/removefromcart', {
+            fetch(`${BASE_URL}/removefromcart`, {
                 method: 'post',
                 headers: {
                     Accept: 'application/json',
@@ -81,7 +82,7 @@ export const ShopContextProvider = (props) => {
         setCartItem((prev)=>({...prev,[itemId]:0}))
         if (localStorage.getItem('auth-token')) {
             console.log(localStorage.getItem('auth-token'));
-            fetch('http://localhost:4000/removefromcarttotally', {
+            fetch(`${BASE_URL}/removefromcarttotally`, {
                 method: 'post',
                 headers: {
                     Accept: 'application/json',

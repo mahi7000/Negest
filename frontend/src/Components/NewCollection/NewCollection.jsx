@@ -4,9 +4,10 @@ import { Item } from '../Item/Item';
 
 export const NewCollection = () => {
   const [newin, setNewin] = useState([]);
+  const BASE_URL = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
-    fetch('http://localhost:4000/newin')
+    fetch(`${BASE_URL}/newin`)
     .then((response) => response.json())
     .then((data) => setNewin(data));
   }, [])

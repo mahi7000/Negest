@@ -9,6 +9,7 @@ export const LoginSignup = () => {
         name: '',
     })
     const [error, setError] = useState('');
+    const BASE_URL = process.env.REACT_APP_API_URL;
 
     const changeHandler = (e) => {
         setFormData({...formData, [e.target.name]: e.target.value})
@@ -17,7 +18,7 @@ export const LoginSignup = () => {
     const login = async () => {
         console.log("Logged In", formData)
         let responseData;
-        await fetch('http://localhost:4000/login', {
+        await fetch(`${BASE_URL}/login`, {
             method: 'post',
             headers: {
                 Accept: 'application/json',
@@ -38,7 +39,7 @@ export const LoginSignup = () => {
     const signup = async () => {
         console.log("Signed Up", formData);
         let responseData;
-        await fetch('http://localhost:4000/signup', {
+        await fetch(`${BASE_URL}/signup`, {
             method: 'post',
             headers: {
                 Accept: 'application/json',
