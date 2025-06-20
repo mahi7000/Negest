@@ -10,7 +10,7 @@ export const NewCollection = () => {
     fetch(`${BASE_URL}/newin`)
     .then((response) => response.json())
     .then((data) => setNewin(data));
-  }, [])
+  }, [BASE_URL])
 
   return (
     <div className='new-collection'>

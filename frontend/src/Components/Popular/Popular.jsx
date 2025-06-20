@@ -10,7 +10,7 @@ export const Popular = () => {
     fetch(`${BASE_URL}/popular`)
     .then((response) => response.json())
     .then((data) => setPopular(data))
-  }, [])
+  }, [BASE_URL])
 
   return (
     <div className='popular'>
