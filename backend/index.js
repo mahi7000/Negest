@@ -1,6 +1,7 @@
 require('dotenv').config();
 
-const port = process.env.PORY || 4000;
+const port = process.env.PORT || 4000;
+const host = process.env.NODE_ENV === 'production' ? process.env.HOST_URL : `http://localhost:${port}`;
 
 const express = require('express');
 const app = express();
@@ -49,7 +50,7 @@ app.use('/images', express.static('upload/images'))
 app.post('/upload', upload.single("product"), (req, res) => {
     res.json({
         success: 1,
-        image_url: `http://localhost:${port}/images/${req.file.filename}`
+        image_url: `${host}/images/${req.file.filename}`
     })
     console.log(req.file);
     console.log(req.body)
