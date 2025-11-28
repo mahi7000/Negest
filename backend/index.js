@@ -1,8 +1,7 @@
 require('dotenv').config();
 
 const port = process.env.PORT || 4000;
-const host = process.env.NODE_ENV === 'production' ? process.env.HOST_URL : `http://localhost:${port}`;
-
+const host = process.env.HOST_URL
 const express = require('express');
 const app = express();
 
